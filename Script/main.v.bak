@@ -1,0 +1,24 @@
+`timescale 1ns / 1ps
+
+module main(
+    output MR, MY, MG,
+    output SR, SY, SG,
+    output ST,          // Tambahkan ST agar bisa dilihat di simulasi
+    input reset,
+    input C,
+    input Emergency,    // Input dari luar chip
+    input Clk
+);
+
+    // Memanggil modul Traffic
+    traffic traffic_system(
+        .MR(MR), .MY(MY), .MG(MG), 
+        .SR(SR), .SY(SY), .SG(SG), 
+        .ST(ST),
+        .reset(reset), 
+        .C(C), 
+        .Emergency(Emergency), // Teruskan Emergency ke dalam
+        .Clk(Clk)
+    );
+
+endmodule

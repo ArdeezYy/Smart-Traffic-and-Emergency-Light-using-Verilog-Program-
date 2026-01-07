@@ -1,0 +1,59 @@
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 23:09:32 on Jan 07,2026
+# Loading work.testbench
+# Loading work.main
+# Loading work.traffic
+# Loading work.timer
+# Loading work.fsm
+# Compile of fsm.v was successful.
+# Compile of main.v was successful.
+# Compile of testbench.v was successful.
+# Compile of timer.v was successful.
+# Compile of traffic.v was successful.
+# 5 compiles, 0 failed with no errors.
+add wave -position end  sim:/testbench/C
+quit -sim
+# End time: 23:13:18 on Jan 07,2026, Elapsed time: 0:03:46
+# Errors: 0, Warnings: 2
+vsim -gui work.testbench
+# vsim -gui work.testbench 
+# Start time: 23:13:56 on Jan 07,2026
+# Loading work.testbench
+# Loading work.main
+# Loading work.traffic
+# Loading work.timer
+# Loading work.fsm
+vlog *.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:14:06 on Jan 07,2026
+# vlog -reportprogress 300 fsm.v main.v testbench.v timer.v traffic.v 
+# -- Compiling module fsm
+# -- Compiling module main
+# -- Compiling module testbench
+# -- Compiling module timer
+# -- Compiling module traffic
+# 
+# Top level modules:
+# 	testbench
+# End time: 23:14:06 on Jan 07,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.testbench
+# End time: 23:14:07 on Jan 07,2026, Elapsed time: 0:00:11
+# Errors: 0, Warnings: 1
+# vsim work.testbench 
+# Start time: 23:14:07 on Jan 07,2026
+# Loading work.testbench
+# Loading work.main
+# Loading work.traffic
+# Loading work.timer
+# Loading work.fsm
+add wave -r /*
+run -all
+# EMERGENCY ON
+# EMERGENCY OFF
+# ** Note: $stop    : testbench.v(48)
+#    Time: 1550 ns  Iteration: 0  Instance: /testbench
+# Break in Module testbench at testbench.v line 48
+# End time: 01:32:53 on Jan 08,2026, Elapsed time: 2:18:46
+# Errors: 0, Warnings: 1

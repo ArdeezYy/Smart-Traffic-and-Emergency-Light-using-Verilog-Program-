@@ -1,0 +1,31 @@
+`timescale 1ns / 1ps
+
+module timer(
+    output TS,     // Time Short (Kuning)
+    output TL,     // Time Long (Hijau)
+    input ST,      // Start Timer (Reset)
+    input Clk
+);
+
+    // PARAMETER WAKTU
+    parameter TIME_SMALL = 2;
+    parameter TIME_LONG  = 4;
+
+    // PERBAIKAN DISINI: 
+    // Kita inisialisasi nilai awal jadi 0 agar tidak merah (X)
+    reg [31:0] value = 0; 
+
+    // Logika Output
+    assign TS = (value >= TIME_SMALL);
+    assign TL = (value >= TIME_LONG);
+
+    // Logika Penghitung
+    always @(posedge Clk) begin
+        if (ST == 1) begin
+            value <= 0;          // Reset hitungan
+        end else begin
+            value <= value + 1;  // Menghitung naik
+        end
+    end
+
+endmodule

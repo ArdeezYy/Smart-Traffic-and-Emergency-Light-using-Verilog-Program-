@@ -1,0 +1,144 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vfsm
+Z0 !s110 1767802446
+!i10b 1
+!s100 j4AKm]5kXz>NTazffeP5j1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IEi13aI468UznWQi2[RW;T1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/ardik/SURAT BENCI/tubesapsisdig
+w1765994309
+8fsm.v
+Ffsm.v
+!i122 154
+L0 3 74
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1767802446.000000
+!s107 traffic.v|timer.v|testbench.v|main.v|fsm.v|
+Z6 !s90 -reportprogress|300|fsm.v|main.v|testbench.v|timer.v|traffic.v|
+!i113 1
+Z7 tCvgOpt 0
+vmain
+R0
+!i10b 1
+!s100 _bNzhDQ9H3e]CTnaBm@491
+R1
+IQS003f2]E<eoGe0l4TkgQ2
+R2
+R3
+w1765994175
+8main.v
+Fmain.v
+!i122 154
+L0 3 22
+R4
+r1
+!s85 0
+31
+R5
+Z8 !s107 traffic.v|timer.v|testbench.v|main.v|fsm.v|
+R6
+!i113 1
+R7
+vtestbench
+R0
+!i10b 1
+!s100 OP0<16g=LXif`PjzI2Xj80
+R1
+IDo;9F57DR55@_XMjL1;LI2
+R2
+R3
+w1765993217
+8testbench.v
+Ftestbench.v
+!i122 154
+L0 3 52
+R4
+r1
+!s85 0
+31
+R5
+R8
+R6
+!i113 1
+R7
+vtimer
+R0
+!i10b 1
+!s100 =CRQ^mCGN6danXhEaGf;?2
+R1
+IkcLSb305idd3^Uk^2knLf1
+R2
+R3
+w1765994178
+8timer.v
+Ftimer.v
+!i122 154
+L0 3 27
+R4
+r1
+!s85 0
+31
+R5
+R8
+R6
+!i113 1
+R7
+vtraffic
+R0
+!i10b 1
+!s100 g8oPm5UEj6^l2@<Q4heOj0
+R1
+ISmj_5@5S2VeMG^GJXzP9k3
+R2
+R3
+w1765994259
+8traffic.v
+Ftraffic.v
+!i122 154
+L0 3 35
+R4
+r1
+!s85 0
+31
+R5
+R8
+R6
+!i113 1
+R7
+vtraffic_control
+!s110 1765991873
+!i10b 1
+!s100 8>OEdS@;8O3z]CDoMI4k40
+R1
+I^fa1VnfR1cj`NSl1lhboP0
+R2
+R3
+w1765991629
+8C:/Users/ardik/SURAT BENCI/tubesapsisdig/traffic.v
+FC:/Users/ardik/SURAT BENCI/tubesapsisdig/traffic.v
+!i122 98
+L0 3 81
+R4
+r1
+!s85 0
+31
+!s108 1765991873.000000
+!s107 C:/Users/ardik/SURAT BENCI/tubesapsisdig/traffic.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/ardik/SURAT BENCI/tubesapsisdig/traffic.v|
+!i113 1
+o-work work
+R7

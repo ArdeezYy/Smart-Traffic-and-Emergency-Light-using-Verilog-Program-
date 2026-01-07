@@ -1,0 +1,37 @@
+`timescale 1ns / 1ps
+
+module traffic(
+    output MR, MY, MG,
+    output SR, SY, SG,
+    output ST,         // Output ST diteruskan keluar
+    input reset,
+    input C,
+    input Emergency,   // Menerima sinyal Emergency
+    input Clk
+);
+
+    // Kabel Internal
+    wire TS, TL;
+
+    // 1. Panggil Timer
+    timer timer_unit(
+        .TS(TS), 
+        .TL(TL), 
+        .ST(ST), 
+        .Clk(Clk)
+    );
+
+    // 2. Panggil FSM (Otak)
+    fsm fsm_unit(
+        .MR(MR), .MY(MY), .MG(MG), 
+        .SR(SR), .SY(SY), .SG(SG), 
+        .ST(ST), 
+        .TS(TS), 
+        .TL(TL), 
+        .C(C), 
+        .reset(reset), 
+        .Emergency(Emergency), // Sambungkan Emergency ke FSM
+        .Clk(Clk)
+    );
+
+endmodule
